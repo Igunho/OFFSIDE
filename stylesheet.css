@@ -121,7 +121,6 @@ footer {
   align-items: center;
   justify-items: center;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
   margin-top: 20px;
   margin: -10px;
   width: 110%;
