@@ -5,10 +5,10 @@
   font-size: 21px;
 }
 
-/* body {
+body {
     background-color: black;
     background: linear-gradient(180deg,rgba(0,0,0,1) 0%, rgba(67,97,238,1) 100%);
-} */
+}
 
 #topbar {
     background-color: #d9d9d9;
@@ -19,7 +19,7 @@
     top: 0px;
     left: 0px;
     height: 90px;
-    width: 100%;
+    width: 110%;
     & img {
         margin: 5px;
     }
@@ -55,13 +55,36 @@ main {
     top: 120px;
     margin: 120px;
 }
-.container-roupas {
+.container-roupas-slide {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 40px;
+    margin: 40px;
+    & button {
+        height: 40px;
+        width: 40px;
+        border: inset;
+    }
+    & button:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
+    }
+    & button:active {
+        transform: translateY(4px);
+    }
+}
+.container-roupas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin: 40px;
     & button {
         height: 40px;
         width: 40px;
@@ -108,4 +131,20 @@ main {
 .retro {
     border: 4px inset rgb(185, 185, 185);
     /* border: 4px outset; */
+}
+
+footer {
+  background-color: #d9d9d9;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  margin-top: 20px;
+  margin: -10px;
+  width: 110%;
+  & img {
+    width: 120px;
+    height: 120px;
+  }
 }
