@@ -11,7 +11,8 @@ body {
 }
 
 #topbar {
-    background-color: #d9d9d9;
+    background-color: #00000000;
+    color: white;
     position: absolute;
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +114,8 @@ main {
 }
 
 footer {
-  background-color: #d9d9d9;
+  background-color: #000000;
+  color: white;
   display: grid;
   align-items: center;
   justify-items: center;
