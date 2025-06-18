@@ -236,3 +236,25 @@ footer {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+
+@media screen and (max-width: 400px) {
+    #logo {
+        width: 200%;
+    }
+    #topbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 110%;
+        & input {
+            width: 380px;
+        }
+    }
+    #bottombar {
+        height: 50px;
+        gap: 60px;
+        line-height: 30px;
+    }
+    .card {
+        width: 280px;
+    }
+}
