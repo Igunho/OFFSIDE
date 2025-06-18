@@ -84,7 +84,8 @@ main {
     width: 240px;
     padding: 10px;
     box-shadow: 0px 2px 5px black;
-    background-color: #cfcfcf;
+    background-color: #000000;
+    color: white;
     & button {
         height: 100%;
         width: 100%;
