@@ -1,6 +1,7 @@
 let iterations = {
     novidades: 0
 }
+let count = 0
 
 $(document).ready(function() {
     $("#next").click(function() {
@@ -22,5 +23,10 @@ $(document).ready(function() {
             $("#next").siblings(".card:visible:last").hide()
             iterations.novidades--
         }
+    })
+
+    $(".carrinho").click(function() {
+        count++
+        $("#carrinho").text("🛒Carrinho " + count)
     })
 })
