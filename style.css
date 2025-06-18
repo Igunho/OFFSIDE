@@ -1,0 +1,214 @@
+body{
+    /* background-image: linear-gradient(black, rgba(102, 73, 161, 1)); */
+    background-color: black;
+    overflow-x: hidden;
+}
+#topbar{
+    background-color: lightgray;
+    inline-size: auto;
+    height: 50px;
+    margin: -10px;
+    text-align: end;
+    & #logo{
+        width: 10%;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        top: 0;
+    }
+}
+
+#grade{
+    color: white;
+    text-align: center;
+    font-size: 30px ;
+}
+
+/* #grade{
+    inline-size: 50%;
+    position: relative;
+    left: 30%;
+} */
+#ball{
+    width: 7%;
+    animation: spin 2s infinite;
+    position: absolute;
+    bottom: 27%;
+    left: 45%;
+}
+a{
+    line-height: 2;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* anuncio mp3 */
+#merchan{
+    background-color: darkgrey;
+    height: 300px;
+    inline-size: 450px;
+    border-top: 20px solid darkblue; 
+    position: relative;
+    margin-top: 10%;
+    left: 30%;
+    & #close{
+        background-color: lightgrey;
+        height: 5%;
+        width: 5%;
+        float: right;
+        text-align: center;
+        margin:-4% 2% 0 0;
+    }
+    & #container{
+        background-color: white;
+        height: 50%;
+        inline-size: 90%;
+        position: relative;
+        margin: 5% 5% 5% 5%;
+    } & .img{
+        height: 100%;
+        width: 80%;
+    } & #unload{
+        background-color: black;
+        position: relative;
+        height: 10%;
+        width: 80%;
+        margin: 0 10% 5% 10%;
+    }
+     & #loadbar{
+        background-color: rgba(254, 127, 156, 1);
+        position: absolute;
+        height: 100%;
+        
+    } & #ponta{
+        height: 120%;
+        width: 7%;
+        background-color: rgba(247, 37, 133, 1);
+        position: relative;
+        top: -2px;
+    } & #butonslayout{
+        height: 10%;
+        width: 80%;
+        margin-left: 20px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        position: relative;
+    } & .button{
+        background-color: lightgrey;
+        height: 100%;
+        margin-left: 10px;
+        width: 70%;
+        text-align: center;
+    } & #show{
+        margin-left: 45px;
+        font-size: 20px;
+        line-height: 2;
+    } 
+}
+.loadbar{
+    animation: progress 5s forwards;
+}
+.ponta{
+    animation: motion 5s forwards;
+}
+.pause{
+    animation-play-state: paused;
+}
+.btnimg{
+    width: 40%;
+    margin-top: 10px;
+}
+
+/* load popup */
+.load{
+    background-color: white;
+    border-top: 20px solid pink;
+    inline-size: 50%;
+    height: 200px;
+    position: relative;
+    top: 20%;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+.barracareg{
+    height: 20%;
+    inline-size: 100%;
+    position: absolute;
+    left: 0;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr ;
+    margin: 5% 0 0 10px;
+    text-align: center;
+}
+.square{
+    height: 60%;
+    background-color: purple;
+    inline-size: 50%;
+    margin: -10px 5px 5px 0 ;
+}
+.btnx{
+    background-color: lightgray;
+    height: 5%;
+    width: 5%;
+    float: right;
+    text-align: center;
+    margin:-2% 2% 0 0;
+    font-size: 10px;
+}
+
+/*  sobre + imagens */
+#textsobre{
+    color: white;
+    font-size: 30px;
+    margin-top: 200px;
+}
+#grupo{
+    width: 100%;
+    margin-left: 10px ;
+    z-index: -5;
+}
+
+/* footer */
+#Contato{
+    margin: -12% -5% 0 -5%;
+    background-color: lightgray;
+    height: 110px;
+    inline-size: auto;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    z-index: 44;
+    text-align: center;
+}
+.gradeicon{
+    height: 50%;
+    background-color: aqua;
+    inline-size: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.icon{
+    width: 15%;
+}
+
+/* animacoes */
+@keyframes progress{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+@keyframes motion {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(+335px);}
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
