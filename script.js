@@ -112,12 +112,12 @@ function load(){
 
              if( a >= 11){
         clearInterval(vau);
-        window.location.href = ""
+        window.location.href = "produtos.html"
    } }, 800);
 }
 
 btnx.addEventListener('click', function close(){
-    popup.setAttribute('hidden', 'true')
+    popup.setAttribute('hidden', 'true');
 });
 
 

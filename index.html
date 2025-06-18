@@ -4,58 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>inicio</title>
+    <link rel="icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <title>Offside</title>
+    
     <script src="https://code.jquery.com/jquey-3.6.0.,im.js"></script>
 </head>
-<body>
-    <main>
+<body class="vt323-regular">
 
     <nav id="topbar">
+        <img src="imgs/logo.png" alt="logo" id="logo" style="position: absolute; top: 5px; left: 5px; z-index: 1; width: 10%;">
+        <input type="text" class="retro vt323-regular" placeholder="Pesquisar"></input>
         <div id="">
             <a href="#sobre">Sobre nós</a>
-            <a href="">Produtos</a>
+            <a href="produtos.html">Catalogo</a>
             <a href="#contato">Contato</a>
         </div>
-        <img src="imgs/logo.png" alt="logo" id="logo">
     </nav>
 
-    <section id="grade">
-        <h1>Roupas fora do comum <br> para <span style="color: yellow;">TODAS</span> as <br><span style="color: lightblue;">VIBES!!!</span></h1>
-        <img src="imgs/ball.png" alt="ball" id="ball">
-        <img src="imgs/grade.gif" alt="grade" id="wow">
-    </section>
+    <main>
 
-    <section id="resizer"></section>
-    <section id="merchan">
-        <div id="close">X</div>
-        <div id="container">
-            <img src="imgs/shirt.png" alt="camisa" class="img" id="img1">
-            <img src="imgs/nike.png" alt="sapato" hidden class="img" id="img2">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_898892-MLB79468214640_102024-O-camisa-masculina-puma-palmeiras-i-home-jogador-verde-2024.webp" alt="outra" hidden class="img" id="img3">
-        </div>
-        <div id="unload"><div id="loadbar" class="loadbar"></div><div id="ponta" class="ponta"></div></div>
-        <div id="butonslayout">
-            <div class="button" id="back" onclick="befimage()"><img src="imgs/jump.png" alt="back" class="btnimg"></div>
-            <div class="button" id="pause" onclick="pause()">
-                <img src="imgs/pause.png" alt="pause" class="btnimg">
-                <img src="imgs/pause2.png" alt="despaused" hidden class="btnimg"></div>
-            <div class="button" id="next" onclick="nextimage()"><img src="imgs/jump.png" alt="next" style="transform: scaleX(-1);" class="btnimg"></div>
-            <div class="button" id="show" onclick="load()">Ver mais</div>
-        </div>
-    </section>
+        <section id="grade">
+            <h1>Roupas fora do comum <br> para <span style="color: yellow;">TODAS</span> as <br><span style="color: rgba(76, 201, 240, 1);">VIBES!!!</span></h1>
+            <a href="produtos.html"><img src="imgs/ball.png" alt="ball" id="ball"></a>
+            <img src="imgs/grade.gif" alt="grade" id="wow">
+        </section>
 
-    <section id="sobre">
-        <h2 id="textsobre">OFF SIDE é o resultado de quando dois <br> amantes de futebol e estéticas retro decidem <br> juntar os opostos, <br> e criar um maravilhoso e-comerce voltado aos jovens amantes de futebol.   
-        </h2>
-        <img src="imgs/Group 3.png" alt="group" id="grupo">
-    </section>
-
-    <div id="Contato">
-        <div class="gradeicon"><h2>Instagran: Offside</h2><img src="https://icones.pro/wp-content/uploads/2021/02/facebook-icones.png" alt="faceicon" class="icon"></div>
-        <div class="gradeicon"><h2>Facebook: offside</h2><img src="https://static.vecteezy.com/system/resources/previews/018/930/415/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="instaicon" class="icon"></div>
-        <div class="gradeicon"><h2>Whatssap: 4002-8922</h2><img src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png" alt="zapicon" class="icon"></div>      
-    </div>
     </main>
+
+    <footer id="contato">
+        <div>
+            <a><img src="https://icones.pro/wp-content/uploads/2021/02/facebook-icones.png" alt="facebook" style="grid-row: 1;"></a>
+            <a><img src="https://static.vecteezy.com/system/resources/previews/018/930/415/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="instagram" style="grid-row: 2;"></a>
+            <a><img src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png" alt="whatsapp" style="grid-row: 3;"></a>
+        </div>
+        <p>OFFSIDE todos os direitos reservados © 2025</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
